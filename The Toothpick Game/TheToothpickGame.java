@@ -109,20 +109,20 @@ public class TheToothpickGame
         else{
             computerOpponent = true;
             System.out.println("************************\n* Computer Skill Level *\n************************");
-            System.out.println("*1) BeetleJuice\n*2) Kim Jong un\n*3) Winston Zuo\n************************");
+            System.out.println("*1) BeetleJuice\n*2) Kim \n*3) Winston Zuo\n************************");
             System.out.print("\n"+player1Name + ", which computer do you want to take on? ");
             compSkillLevel = userInput.nextInt();
             while(compSkillLevel != 3 && compSkillLevel != 2 && compSkillLevel != 1) {
                 System.out.print(player1Name+ ", that was not one of the options! Pick 1, 2, or 3. ");
                 System.out.println("************************\n* Computer Skill Level *\n************************");
-                System.out.println("*1) BeetleJuice\n*2) Kim Jong un\n *3) Winston Zuo\n************************");
+                System.out.println("*1) BeetleJuice\n*2) Kim\n *3) Winston Zuo\n************************");
                 System.out.print("\n"+player1Name + ", which computer do you want to take on? ");
                 compSkillLevel = userInput.nextInt();
             }
             if (compSkillLevel == EASY)
                 player2Name = "BeetleJuice";
             else if (compSkillLevel == MEDIUM)
-                player2Name = "Kim Jong Un";
+                player2Name = "Kim";
             else
                 player2Name = "Winston Zuo";
         }
@@ -444,13 +444,13 @@ public class TheToothpickGame
         else
             toothpickOrToothpicks = "toothpicks";
         if(randomStringChoice == 1)
-            whatToSay = ("Kim Jong Un is consulting his analytics advisor.\nHe choses " +toothpicksGrabbed +" "+toothpickOrToothpicks + ".");
+            whatToSay = ("Kim is consulting his analytics advisor.\nHe choses " +toothpicksGrabbed +" "+toothpickOrToothpicks + ".");
         else if(randomStringChoice == 2)
-            whatToSay = "Kim Jong Un calls Dennis Rodman for advise.\nHe takes " + toothpicksGrabbed + " " + toothpickOrToothpicks + ".";
+            whatToSay = "Kim calls Dennis Rodman for advise.\nHe takes " + toothpicksGrabbed + " " + toothpickOrToothpicks + ".";
         else if(randomStringChoice == 3)
-            whatToSay = "Kim Jong Un is called to sign off a new agreement.\nHe rashly grabs " + toothpicksGrabbed + " " + toothpickOrToothpicks + ".";
+            whatToSay = "Kim is called to sign off a new agreement.\nHe rashly grabs " + toothpicksGrabbed + " " + toothpickOrToothpicks + ".";
         else
-            whatToSay = "Kim Jong Un has no clue what's going on.\nHe makes a random choice and picks up " + toothpicksGrabbed + " " + toothpickOrToothpicks + ".";
+            whatToSay = "Kim has no clue what's going on.\nHe makes a random choice and picks up " + toothpicksGrabbed + " " + toothpickOrToothpicks + ".";
         return whatToSay;
     }
     
